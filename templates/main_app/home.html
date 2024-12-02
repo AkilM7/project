@@ -1,0 +1,169 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    
+<nav class="bio">
+    <div class="name">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'producthome' %}">Home Appliances</a>
+        <a href="{% url 'mobiles' %}">Mobiles</a>
+    </div>
+        
+    <div class="navbar">       
+        <a href="#"><abbr title="About"><img src="{% static 'images/about.png' %}" alt="About"></abbr></a>
+        <a href="{% url 'login' %}"><abbr title="Logout"><img src="{% static 'images/logout.png' %}" alt="Logout"></abbr></a>
+        <a href="{% url 'profile' %}"><abbr title="Profile"><img src="{% static 'images/profile.png' %}" alt="Profile"></abbr></a>
+    </div>
+</nav>
+
+<a href="{% url 'producthome' %}"><abbr title="Home Appliances"><h3>Home Appliances</h3></abbr></a><br>
+<div class="product-section">
+    
+    <div>
+        <img src="{% static 'images/fridge.jpg' %}" alt="Refrigerator">
+        <h4>Refrigerator</h4>
+        <p>$34,999</p><br>
+        <a href="#" target="_blank"><button>Add to Cart</button></a>
+    </div>
+
+    <div>
+        <img src="{% static 'images/washingmachine.jpg' %}" alt="Washing Machine">
+        <h4>Washing Machine</h4>
+        <p>$34,999</p><br>
+        <a href="#" target="_blank"><button>Add to Cart</button></a>
+    </div>
+
+    <div>
+        <img src="{% static 'images/microwave.jpg' %}" alt="Microwave">
+        <h4>Microwave</h4>
+        <p>$14,999</p><br>
+        <a href="#" target="_blank"><button>Add to Cart</button></a>
+    </div>
+
+    <div>
+        <img src="{% static 'images/vacuumcleaner.jpg' %}" alt="Vacuum Cleaner">
+        <h4>Vacuum Cleaner</h4>
+        <p>$4,999</p><br>
+        <a href="#" target="_blank"><button>Add to Cart</button></a>
+    </div>
+</div>
+
+<center>
+    <a href="{% url 'producthome' %}"><abbr title="See all"><img src="{% static 'images/next.jpg' %}" width="40" height="40"><h4>See More</h4></abbr></a>
+</center>
+
+<a href="{% url 'mobiles' %}"><abbr title="Mobiles"><h3>Mobiles</h3></abbr></a>
+<div class="product-section">
+    <div>
+        <img src="{% static 'images/iphone.jpg' %}" alt="iPhone">
+        <h4>Apple iPhone 15 Pro Max (256 GB) - Blue Titanium</h4>
+        <p>$1,45,999</p><br>
+        <a href="#" target="_blank"><button>Add to Cart</button></a>
+    </div>
+
+    <div>
+        <img src="{% static 'images/realme.jpg' %}" alt="Realme">
+        <h4>Realme 12 Pro+ 5G Submarine Blue</h4>
+        <p>$25,999</p><br>
+        <a href="#" target="_blank"><button>Add to Cart</button></a>
+    </div>
+
+    <div>
+        <img src="{% static 'images/samsung.jpg' %}" alt="Samsung">
+        <h4>Samsung Galaxy S24 Ultra 5G AI Smartphone</h4>
+        <p>$1,21,999</p><br>
+        <a href="#" target="_blank"><button>Add to Cart</button></a>
+    </div>
+
+    <div>
+        <img src="{% static 'images/oppo.jpg' %}" alt="Oppo">
+        <h4>Oppo F25 Pro 5G</h4>
+        <p>$19,999</p><br>
+        <a href="#" target="_blank"><button>Add to Cart</button></a>
+    </div>
+</div>
+
+<center>
+    <a href="{% url 'mobiles' %}"><abbr title="See all"><img src="{% static 'images/next.jpg' %}" width="40" height="40"><h4>See More</h4></abbr></a>
+</center>
+
+<a href="#" target="_blank"><abbr title="Laptops"><h3>Laptops</h3></abbr></a>
+<div class="product-section">
+    <div>
+        <img src="{% static 'images/laptop1.jpg' %}" alt="Dell Laptop">
+        <h4>Dell [Smartchoice]</h4>
+        <p>$55,999</p><br>
+        <a href="#" target="_blank"><button>Add to Cart</button></a>
+    </div>
+
+    <div>
+        <img src="{% static 'images/acer.jpg' %}" alt="Acer">
+        <h4>Acer Aspire Lite</h4>
+        <p>$25,999</p><br>
+        <a href="#" target="_blank"><button>Add to Cart</button></a>
+    </div>
+
+    <div>
+        <img src="{% static 'images/apple.jpg' %}" alt="Apple MacBook">
+        <h4>Apple MacBook Air Laptop M1 chip</h4>
+        <p>$54,999</p><br>
+        <a href="#" target="_blank"><button>Add to Cart</button></a>
+    </div>
+
+    <div>
+        <img src="{% static 'images/asus.jpg' %}" alt="Asus">
+        <h4>ASUS Vivobook 15</h4>
+        <p>$29,999</p><br>
+        <a href="#" target="_blank"><button>Add to Cart</button></a>
+    </div>
+</div>
+
+<center>
+    <a href="#" target="_blank"><abbr title="See all"><img src="{% static 'images/next.jpg' %}" width="40" height="40"><h4>See More</h4></abbr></a>
+</center>
+
+<a href="#" target="_blank"><abbr title="Gadgets"><h3>Gadgets</h3></abbr></a>
+<div class="product-section">
+    <div>
+        <img src="{% static 'images/gadget1.jpg' %}" alt="Monitor Stand">
+        <h4>AmazonBasics Monitor Stand</h4>
+        <p>$999</p><br>
+        <a href="#" target="_blank"><button>Add to Cart</button></a>
+    </div>
+
+    <div>
+        <img src="{% static 'images/buds.jpg' %}" alt="Earbuds">
+        <h4>JBL Live Pro 2 Premium in-Ear Wireless TWS Earbuds</h4>
+        <p>$9,999</p><br>
+        <a href="#" target="_blank"><button>Add to Cart</button></a>
+    </div>
+
+    <div>
+        <img src="{% static 'images/smartwatch.jpg' %}" alt="Smartwatch">
+        <h4>boAt Smart Watch with SIM card adaptation</h4>
+        <p>$1,999</p><br>
+        <a href="#" target="_blank"><button>Add to Cart</button></a>
+    </div>
+
+    <div>
+        <img src="{% static 'images/speaker.jpg' %}" alt="Speaker">
+        <h4>JBL Bluetooth Speaker</h4>
+        <p>$9,999</p><br>
+        <a href="#" target="_blank"><button>Add to Cart</button></a>
+    </div>
+</div>
+
+<center>
+    <a href="#" target="_blank"><abbr title="See all"><img src="{% static 'images/next.jpg' %}" width="40" height="40"><h4>See More</h4></abbr></a>
+</center>
+
+</body>
+</html>
+

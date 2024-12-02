@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobiles</title>
+    <link rel="stylesheet" href="{% static 'css/mobile.css' %}">
+</head>
+<body>
+    <nav class="bio">
+        <div class="name">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'producthome' %}">Home Appliances</a>
+            <a href="{% url 'mobiles' %}">Mobiles</a>
+        </div>    
+        <div class="navbar">
+            <a href="#" title="About"><img src="{% static 'images/about.png' %}" alt="About"></a>
+            <a href="{% url 'login' %}" title="Logout"><img src="{% static 'images/logout.png' %}" alt="Logout"></a>
+            <a href="{% url 'profile' %}" title="Profile"><img src="{% static 'images/profile.png' %}" alt="Profile"></a>
+        </div>
+    </nav>
+
+    <h2>Mobiles</h2>
+    <div class="product-section">
+        <div>
+            <img src="{% static 'images/iphone.jpg' %}" alt="iPhone">
+            <h4>Apple iPhone 15 Pro Max (256 GB) - Blue Titanium</h4>
+            <p>$1,45,999</p>
+            <a href="#" target="_blank"><button>Add to Cart</button></a>
+        </div>
+        <div>
+            <img src="{% static 'images/realme.jpg' %}" alt="Realme">
+            <h4>Realme 12 Pro+ 5G Submarine Blue, 12GB RAM, 256GB Storage</h4>
+            <p>$25,999</p>
+            <a href="#" target="_blank"><button>Add to Cart</button></a>
+        </div>
+        <div>
+            <img src="{% static 'images/samsung.jpg' %}" alt="Samsung">
+            <h4>Samsung Galaxy S24 Ultra 5G AI Smartphone</h4>
+            <p>$1,21,999</p>
+            <a href="#" target="_blank"><button>Add to Cart</button></a>
+        </div>
+        <div>
+            <img src="{% static 'images/oppo.jpg' %}" alt="Oppo">
+            <h4>Oppo F25 Pro 5G (Lava Red, 8GB RAM, 128GB Storage)</h4>
+            <p>$19,999</p>
+            <a href="#" target="_blank"><button>Add to Cart</button></a>
+        </div>
+        <div>
+            <img src="{% static 'images/infinix.jpg' %}" alt="Infinix">
+            <h4>Infinix GT 20 Pro (Mecha black, 256 GB) (12 GB RAM)</h4>
+            <p>$24,999</p>
+            <a href="#" target="_blank"><button>Add to Cart</button></a>
+        </div>
+        <div>
+            <img src="{% static 'images/moto.jpg' %}" alt="Motorola">
+            <h4>Motorola Edge 50 Fusion 5G (Hot Pink, 8GB RAM, 128GB Storage)</h4>
+            <p>$24,499</p>
+            <a href="#" target="_blank"><button>Add to Cart</button></a>
+        </div>
+        <div>
+            <img src="{% static 'images/nothing.jpg' %}" alt="Nothing">
+            <h4>Nothing Phone (2a) 5G (White, 12GB RAM, 256GB Storage)</h4>
+            <p>$27,999</p>
+            <a href="#" target="_blank"><button>Add to Cart</button></a>
+        </div>
+        <div>
+            <img src="{% static 'images/redmi.jpg' %}" alt="Redmi">
+            <h4>Redmi Note 13 Pro+ (Fusion Purple, 8GB RAM, 256GB Storage)</h4>
+            <p>$26,999</p>
+            <a href="#" target="_blank"><button>Add to Cart</button></a>
+        </div>
+        <div>
+            <img src="{% static 'images/xaiomi.jpg' %}" alt="Xiaomi">
+            <h4>Xiaomi 14 (Jade Green, 12GB RAM, 512GB Storage)</h4>
+            <p>$47,999</p>
+            <a href="#" target="_blank"><button>Add to Cart</button></a>
+        </div>
+        <div>
+            <img src="{% static 'images/poco.jpg' %}" alt="POCO">
+            <h4>POCO M6 Pro 5G (Power Black, 4GB RAM, 128GB Storage)</h4>
+            <p>$10,999</p>
+            <a href="#" target="_blank"><button>Add to Cart</button></a>
+        </div>
+        <div>
+            <img src="{% static 'images/vivo.jpg' %}" alt="Vivo">
+            <h4>Vivo V40 5G Smartphone (Lotus Purple, 8GB RAM, 128GB Storage)</h4>
+            <p>$42,999</p>
+            <a href="#" target="_blank"><button>Add to Cart</button></a>
+        </div>
+        <div>
+            <img src="{% static 'images/iqoo.jpg' %}" alt="iQOO">
+            <h4>iQOO Z9 5G (Brushed Green,8GB RAM,128GB Storage)</h4>
+            <p>$18,999</p>
+            <a href="#" target="_blank"><button>Add to Cart</button></a>
+        </div>
+    </div>
+
+    <center>
+        <a href="#" target="_blank" title="See all">
+            <img src="{% static 'images/next.jpg' %}" alt="See more" width="40" height="40">
+            <h4>See More</h4>
+        </a>
+    </center>
+</body>
+</html>
+

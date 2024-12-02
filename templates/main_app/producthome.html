@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Appliances</title>
+    <link rel="stylesheet" href="{% static 'css/producthome.css' %}">
+</head>
+<body>
+    <nav class="bio">
+        <div class="name">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'producthome' %}">Home Appliances</a>
+            <a href="{% url 'mobiles' %}">Mobiles</a>
+        </div>    
+        <div class="navbar">       
+            <a href="#" title="About">
+                <img src="{% static 'images/about.png' %}" alt="About">
+            </a>
+            <a href="{% url 'login' %}" title="Logout">
+                <img src="{% static 'images/logout.png' %}" alt="Logout">
+            </a>
+            <a href="{% url 'profile' %}" title="Profile">
+                <img src="{% static 'images/profile.png' %}" alt="Profile">
+            </a>
+        </div>
+    </nav>
+    
+    <h2>Home Appliances</h2>
+
+    <div class="product-section">
+        <div>
+            <img src="{% static 'images/mixer.jpg' %}" alt="Mixer">
+            <h3>Wipro Elato FMG206 1000W Mixer Grinder (4 Jars, Black)</h3>
+            <p>$5,999</p><br>
+            <a href="https://www.amazon.in/Butterfly-Jet-Elite-750-Watt-Grinder/dp/B07DGD4Z4C" target="_blank">
+                <button>Add to Cart</button>
+            </a>
+        </div>
+
+        <div>
+            <img src="{% static 'images/washingmachine.jpg' %}" alt="Washing Machine">
+            <h3>LG 13/08Kg Front Load Washer Dryer, AI Direct Drive™, ez-Dispense, Black VCM</h3>
+            <p>$34,999</p><br>
+            <a href="https://www.amazon.in/LG-Inverter-Fully-Automatic-Washing-FHM1408BDM/dp/B0BMGGWGHV" target="_blank">
+                <button>Add to Cart</button>
+            </a>
+        </div>
+
+        <div>
+            <img src="{% static 'images/microwave.jpg' %}" alt="Microwave">
+            <h3>28 L Curd Any Time, Convection Microwave Oven, MC28A5013AK</h3>
+            <p>$14,999</p><br>
+            <a href="https://www.amazon.in/gp/aw/d/B01LF927AU" target="_blank">
+                <button>Add to Cart</button>
+            </a>
+        </div>
+
+        <div>
+            <img src="{% static 'images/vacuumcleaner.jpg' %}" alt="Vacuum Cleaner">
+            <h3>Philips PowerPro FC9352/01-Compact Bagless Vacuum Cleaner for Home</h3>
+            <p>$4,999</p><br>
+            <a href="https://www.amazon.in/Eureka-Forbes-Quick-Clean-DX/dp/B00F3ABSXU" target="_blank">
+                <button>Add to Cart</button>
+            </a>
+        </div>
+
+        <div>
+            <img src="{% static 'images/fridge.jpg' %}" alt="Fridge">
+            <h3>301 L Twin Cooling Plus™ Double Door Refrigerator</h3>
+            <p>$32,999</p><br>
+            <a href="https://www.amazon.in/Whirlpool-Refrigerator-343D-Protton-Roy/dp/B078YJXPCF" target="_blank">
+                <button>Add to Cart</button>
+            </a>
+        </div>
+
+        <div>
+            <img src="{% static 'images/waterpurifier.jpg' %}" alt="Water Purifier">
+            <h3>KENT Grand RO Water Purifier</h3>
+            <p>$14,999</p><br>
+            <a href="https://www.amazon.in/KENT-11119-Wall-Mountable-Purifier-Storage/dp/B09CGQ6FCK" target="_blank">
+                <button>Add to Cart</button>
+            </a>
+        </div>
+
+        <div>
+            <img src="{% static 'images/ac.jpg' %}" alt="AC">
+            <h3>Blue Star 0.8 Ton 3 Star Inverter Split AC</h3>
+            <p>$34,999</p><br>
+            <a href="https://www.amazon.in/Blue-Star-Inverter-Copper-IC312XATU/dp/B0817Z7N48" target="_blank">
+                <button>Add to Cart</button>
+            </a>
+        </div>
+
+        <div>
+            <img src="{% static 'images/ironbox.jpg' %}" alt="Iron Box">
+            <h3>Croma 1600 Watts Steam Iron</h3>
+            <p>$4,999</p><br>
+            <a href="https://www.amazon.in/Pigeon-Stovekraft-Steam-Velvet-Watts/dp/B0C8568PM6" target="_blank">
+                <button>Add to Cart</button>
+            </a>
+        </div>
+    </div>
+
+    <center>
+        <a href="https://www.amazon.in/s?k=mobiles&crid=LWYQ1H3QOHA2&sprefix=mobiles" target="_blank" title="See All">
+            <img src="{% static 'images/next.jpg' %}" width="40" height="40" alt="Next">
+            <h4>See More</h4>
+        </a>
+    </center>
+
+</body>
+</html>
+
